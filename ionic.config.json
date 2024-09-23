@@ -1,0 +1,8 @@
+{
+  "name": "GAOXY",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "fe091738"
+}
