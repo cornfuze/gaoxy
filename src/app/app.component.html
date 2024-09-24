@@ -1,3 +1,27 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" href="/tabs/home">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="monitoring" href="/tabs/monitoring">
+        <ion-icon name="desktop-outline"></ion-icon>
+        <ion-label>Monitoring</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="control" href="/tabs/control">
+        <ion-icon name="settings-outline"></ion-icon>
+        <ion-label>Control</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="profile" href="/tabs/profile">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+
+    <ion-router-outlet></ion-router-outlet>
+  </ion-tabs>
 </ion-app>
