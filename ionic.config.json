@@ -1,0 +1,7 @@
+{
+  "name": "gaoxy",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
