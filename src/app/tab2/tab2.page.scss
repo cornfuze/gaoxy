@@ -1,0 +1,46 @@
+.card-content {
+    display: flex;
+    align-items: center; /* Agar gambar dan konten sejajar secara vertikal */
+    justify-content: space-between; /* Memisahkan gambar dan konten */
+  
+    .text-content {
+      flex: 1; /* Konten akan menggunakan sisa ruang */
+    }
+  
+    .card-img { 
+      width: 100px; /* Atur lebar gambar */
+      margin-left: 10px; /* Spasi antara gambar dan konten */
+      border-radius: 8px; /* Opsional, untuk menambahkan sudut melengkung */
+      margin-right: 10px;
+    }
+    .icon-indicator {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Mengatur posisi ke kanan */
+        flex: 0; /* Menyesuaikan fleksibilitas sesuai kebutuhan */
+
+      }
+
+      .indicator-toggle{
+        
+        align-items: start;
+        padding: 10px;
+      }   
+      .indicator{
+        display: flex;
+        padding-right: 30px;
+        font-size: 30px;
+        justify-items: auto;
+        gap: 10px ;
+      }
+      .good{
+        color: rgb(0, 255, 38);
+      }
+      .medium{
+        color: rgb(251, 255, 11);
+      }
+      .bad{
+        color: rgb(237, 27, 27);
+      }
+    
+  }

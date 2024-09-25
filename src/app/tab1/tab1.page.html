@@ -7,14 +7,66 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Card Title</ion-card-title>
-      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Here's a small text description for the card content. Nothing more, nothing less.
-    </ion-card-content>
-  </ion-card> 
+  <ion-grid>
+    <ion-row>
+      <!-- Card 1: Navigate to Tab 1 -->
+      <ion-col size="12" size-md="4">
+        <ion-card (click)="navigateToTab('gaoxy1')" style="margin-bottom: 10px;">
+          <div class="card-content">
+            <div class="text-content">
+              <ion-card-header>
+                <ion-card-title>Gaoxy Facade</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Monitor the condition and growth of microalgae in real-time.
+              </ion-card-content>
+            </div>
+            <ion-icon name="earth-outline" class="custom-icon"></ion-icon>
+          </div>
+        </ion-card>
+      </ion-col>
+
+      <!-- Card 2: Navigate to Tab 2 -->
+      <ion-col size="12" size-md="4">
+        <ion-card (click)="navigateToTab('tab2')" style="margin-bottom: 10px;">
+          <div class="card-content">
+            <div class="text-content">
+              <ion-card-header>
+                <ion-card-title>Water Quality</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Measure various parameters that affect water cleanliness and safety.
+              </ion-card-content>
+            </div>
+            <ion-icon name="water-outline" class="custom-icon"></ion-icon>
+          </div>
+        </ion-card>
+      </ion-col>
+
+      <!-- Card 3: Navigate to Tab 3 -->
+      <ion-col size="12" size-md="4">
+        <ion-card (click)="navigateToTab('tab3')" style="margin-bottom: 10px;">
+          <div class="card-content">
+            <div class="text-content">
+              <ion-card-header>
+                <ion-card-title>Harvest</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Algae growth ready for harvest to ensure optimal conditions for healthy and productive algae growth..
+              </ion-card-content>
+            </div>
+            <img
+              alt="Card 3 image"
+              src="data:image/png;base64,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"
+              class="card-img"
+            />
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+
+
+

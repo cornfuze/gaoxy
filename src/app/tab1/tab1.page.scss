@@ -1,0 +1,21 @@
+.card-content {
+    display: flex;
+    align-items: center; /* Agar gambar dan konten sejajar secara vertikal */
+    justify-content: space-between; /* Memisahkan gambar dan konten */
+  
+    .text-content {
+      flex: 1; /* Konten akan menggunakan sisa ruang */
+    }
+  
+    .card-img {   
+      width: 100px; /* Atur lebar gambar */
+      margin-left: 10px; /* Spasi antara gambar dan konten */
+      border-radius: 8px; /* Opsional, untuk menambahkan sudut melengkung */
+      margin-right: 10px;
+    }
+    .custom-icon {
+        font-size: 100px; /* Atur ukuran sesuai kebutuhan */
+        color: rgb(0, 255, 38);     /* Mengubah warna ikon jika diperlukan */
+      }
+      
+  }

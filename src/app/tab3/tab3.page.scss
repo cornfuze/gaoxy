@@ -1,0 +1,132 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+    font-weight: 700;
+    height: 32%;
+}
+
+.card {
+    padding: 20px;
+    margin: 40px 20px; 
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card .density {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card .percentage {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card .progress-bar {
+    background-color: #c8e6c9;
+    border-radius: 5px;
+    height: 10px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.card .progress-bar .progress {
+    background-color: #66bb6a;
+    border-radius: 5px;
+    height: 100%;
+    width: 50%;
+}
+
+.text {
+    color: black;
+}
+
+.text-gray-600 {
+    color: black; 
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between; /* Mengatur teks agar berada di ujung kiri dan kanan */
+}
+
+.text-update {
+    color: rgb(202, 198, 198);
+}
+
+.overview-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.text-update {
+    padding: 10px 0;
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center; /* Menyelaraskan card di tengah secara vertikal */
+    align-items: center;
+    
+}
+
+.card-content {
+        display: flex;
+        align-items: center; /* Menyelaraskan konten secara vertikal */
+        justify-content: flex-start; /* Menyelaraskan konten secara horizontal */
+        padding:20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        position: relative;
+        width: 100%; 
+        max-width: 400px;
+    }
+
+.card-icon {
+    font-size: 60px;
+    color: #4CAF50;
+    margin-right: 15px;
+}
+
+.status {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Memastikan teks berada di tengah vertikal */
+    font-size: 16px;
+    color: black;
+}
+
+.card-notif {
+    position: absolute; /* Membuat badge berada dalam posisi absolut */
+    right: 20px; /* Mengatur jarak badge dari tepi kanan */
+    top: 50%; /* Memastikan badge berada di tengah secara vertikal */
+    transform: translateY(-50%); /* Mengatur agar badge terpusat di tengah vertikal */
+    padding: 5px 10px; /* Menambahkan padding untuk memperbesar badge */
+}
+
+.good-badge{
+    background: greenyellow;
+    color: rgb(70, 66, 66);
+    font-size: 20px;
+    padding: 10px;
+}
