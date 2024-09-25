@@ -1,1 +1,1 @@
-Haloo Yusupp!
+Yoo Gak Ngaruh Noo Supp!!
