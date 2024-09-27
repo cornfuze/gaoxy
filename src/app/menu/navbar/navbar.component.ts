@@ -1,5 +1,6 @@
 import { Component, OnInit, EnvironmentInjector, inject } from '@angular/core'
-import { IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel, IonList, IonContent } from '@ionic/angular/standalone'
+import { RouterModule } from '@angular/router'
+import { IonTabs, IonTabBar, IonIcon } from '@ionic/angular/standalone'
 import { addIcons } from 'ionicons'
 import { personOutline, homeOutline, desktopOutline, settingsOutline } from 'ionicons/icons'
 
@@ -8,7 +9,7 @@ import { personOutline, homeOutline, desktopOutline, settingsOutline } from 'ion
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
   standalone: true,
-  imports: [IonContent, IonList, IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel]
+  imports: [RouterModule, IonTabs, IonTabBar, IonIcon]
 })
 export class NavbarComponent implements OnInit {
   public environmentInjector = inject(EnvironmentInjector)
