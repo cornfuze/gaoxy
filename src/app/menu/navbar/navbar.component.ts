@@ -18,7 +18,9 @@ export class NavbarComponent implements OnInit {
     addIcons({ homeOutline, desktopOutline, settingsOutline, personOutline });
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    console.log('NavbarComponent initialized');
+  }
 
   setActive(event: Event): void {
     const list = document.querySelectorAll('.list');
