@@ -30,19 +30,19 @@ ion-tab-bar {
     background: linear-gradient(to top right, #56e656, #05a005);
     display: flex;
     justify-content: center;
-    // align-items: center;
 }
 
 .navigation ul {
     display: flex;
-    width: 17.5em;
+    justify-content: space-between;
+    width: 25em;
 }
 
 .navigation ul li {
     position: relative;
     list-style: none;
-    width: 2.75em;
-    height: 2.75em;
+    width: 4em; /* Increased width of each item to space them out */
+    height: 4em; /* Adjusted height to match width */
     z-index: 1;
 }
 
@@ -90,12 +90,13 @@ ion-tab-bar {
 .indicator {
     position: absolute;
     top: -40%;
-    width: 2.75em;
-    height: 2.75em;
+    width: 3em; /* Adjusted to match the size of the navbar items */
+    height: 3em; /* Adjusted to match the size of the navbar items */
     background: #29fd53;
     border-radius: 50%;
     border: 0.25em solid white;
     transition: .5s;
+    transform: translateX(0.44em);
 }
 
 .indicator::before {
@@ -122,18 +123,18 @@ ion-tab-bar {
     box-shadow: 0 -0.6em 0 0 white;
 }
 
-.navigation ul li:nth-child(1).active~.indicator {
-    transform: translateX(calc(2.75em * 0));
+.navigation ul li:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(6em * 0));
 }
 
-.navigation ul li:nth-child(2).active~.indicator {
-    transform: translateX(calc(2.75em * 1));
+.navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(6em * 1));
 }
 
-.navigation ul li:nth-child(3).active~.indicator {
-    transform: translateX(calc(2.75em * 2));
+.navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(6em * 2));
 }
 
-.navigation ul li:nth-child(4).active~.indicator {
-    transform: translateX(calc(2.75em * 3));
+.navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(calc(6em * 3));
 }

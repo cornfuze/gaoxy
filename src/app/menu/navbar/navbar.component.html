@@ -30,7 +30,7 @@
       <div class="navigation">
         <ul>
           <li class="list active" (click)="setActive($event)">
-            <a href="">
+            <a [routerLink]="['/home']" routerLinkActive="active">
               <span class="icon">
                 <ion-icon name="home-outline"></ion-icon>
               </span>
@@ -38,7 +38,7 @@
             </a>
           </li>
           <li class="list" (click)="setActive($event)">
-            <a href="">
+            <a [routerLink]="['/monitoring']" routerLinkActive="active">
               <span class="icon">
                 <ion-icon name="desktop-outline"></ion-icon>
               </span>
@@ -46,7 +46,7 @@
             </a>
           </li>
           <li class="list" (click)="setActive($event)">
-            <a href="">
+            <a [routerLink]="['/control']" routerLinkActive="active">
               <span class="icon">
                 <ion-icon name="settings-outline"></ion-icon>
               </span>
@@ -54,7 +54,7 @@
             </a>
           </li>
           <li class="list" (click)="setActive($event)">
-            <a href="">
+            <a [routerLink]="['/profile']" routerLinkActive="active">
               <span class="icon">
                 <ion-icon name="person-outline"></ion-icon>
               </span>
@@ -67,3 +67,4 @@
     </div>
   </ion-tab-bar>
 </ion-tabs>
+  
