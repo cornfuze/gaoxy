@@ -1,0 +1,53 @@
+.header-container {
+  background-color: #2E7D32; /* Warna hijau untuk header */
+  padding: 60px 20px;
+  
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.header-content h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.notification-icon {
+  font-size: 1.5em;
+  color: white;
+  position: relative;
+}
+
+.notification-icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #00e676;
+  border-radius: 50%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px; /* Mengangkat card ke atas mendekati header */
+}
+
+.monitoring {
+  background-color: white; /* Menetapkan latar belakang card menjadi putih */
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+}
+
+.header-card{
+  color: black;
+}
