@@ -32,7 +32,7 @@
       <ul class="list-group list-group-flush">
         <!-- Personal Information -->
         <li class="list-group-item">
-          <ion-button fill="clear" expand="full">
+          <ion-button fill="clear" expand="full" [routerLink]="['/profile/personal']">
             <ion-icon slot="start" name="person-outline" color="success"></ion-icon>
             <span class="text-capitalize ms-3 me-auto text-black">Personal Information</span>
             <ion-icon slot="end" name="chevron-forward" color="success"></ion-icon>
@@ -40,7 +40,7 @@
         </li>
         <!-- Settings -->
         <li class="list-group-item">
-          <ion-button fill="clear" expand="full">
+          <ion-button fill="clear" expand="full" [routerLink]="['/profile/settings']">
             <ion-icon slot="start" name="settings-outline" color="success"></ion-icon>
             <span class="text-capitalize ms-3 me-auto text-black">Settings</span>
             <ion-icon slot="end" name="chevron-forward" color="success"></ion-icon>
@@ -48,7 +48,7 @@
         </li>
         <!-- Report Problem / Bug -->
         <li class="list-group-item">
-          <ion-button fill="clear" expand="full">
+          <ion-button fill="clear" expand="full" [routerLink]="['/profile/report']">
             <ion-icon slot="start" name="warning-outline" color="success"></ion-icon>
             <span class="text-capitalize ms-3 me-auto text-black">Report Problem / Bug</span>
             <ion-icon slot="end" name="chevron-forward" color="success"></ion-icon>
@@ -56,7 +56,7 @@
         </li>
         <!-- Language -->
         <li class="list-group-item">
-          <ion-button fill="clear" expand="full">
+          <ion-button fill="clear" expand="full" [routerLink]="['/profile/language']">
             <ion-icon slot="start" name="globe-outline" color="success"></ion-icon>
             <span class="text-capitalize ms-3 me-auto text-black">Language</span>
             <ion-icon slot="end" name="chevron-forward" color="success"></ion-icon>
@@ -64,7 +64,7 @@
         </li>
         <!-- FAQ -->
         <li class="list-group-item">
-          <ion-button fill="clear" expand="full">
+          <ion-button fill="clear" expand="full" [routerLink]="['/profile/faq']">
             <ion-icon slot="start" name="help-circle-outline" color="success"></ion-icon>
             <span class="text-capitalize ms-3 me-auto text-black">FAQ</span>
             <ion-icon slot="end" name="chevron-forward" color="success"></ion-icon>

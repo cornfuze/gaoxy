@@ -11,7 +11,7 @@ export const routes: Routes = [
         path: '',
         component: NavbarComponent,
         children: [
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
+            // { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomePage },
             { path: 'monitoring', component: MonitoringPage },
             { path: 'control', component: ControlPage },
