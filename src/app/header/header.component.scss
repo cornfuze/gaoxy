@@ -51,3 +51,14 @@
 .header-card{
   color: black;
 }
+
+ion-header {
+  box-shadow: none !important; /* Menghapus bayangan */
+  border-bottom: none !important; /* Menghapus garis bawah jika ada */
+}
+
+ion-toolbar {
+  box-shadow: none !important; /* Menghapus bayangan dari toolbar */
+  border-bottom: none !important; /* Menghapus border bawah pada toolbar */
+  --background: transparent; /* Memastikan latar belakang toolbar tidak menyebabkan garis */
+}
