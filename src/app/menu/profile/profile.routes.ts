@@ -12,7 +12,6 @@ export const routes: Routes = [
     path: '',
     component: NavbarComponent,
     children: [
-      // { path: '', redirectTo: 'profile', pathMatch: 'full' },
       { path: 'personal', component: PersonalPage },
       { path: 'settings', component: SettingsPage },
       { path: 'report', component: ReportBugPage },
