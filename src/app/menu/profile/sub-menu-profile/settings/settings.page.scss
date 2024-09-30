@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
-.container.personal {
+.container.settings {
     box-sizing: content-box;
     font-family: "Poppins", sans-serif;
     background-color: #176943;
@@ -26,6 +26,10 @@ img.start-0 {
 
 // Responsive
 @media only screen and (max-width: 576px) {
+    .position-relative.text-white {
+        padding-top: 3.5rem;
+    }
+
     img.start-0 {
         width: 50%;
     }

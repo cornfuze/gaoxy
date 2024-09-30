@@ -31,7 +31,10 @@ ion-button.back {
 
 ion-button.mx-auto {
     --background: linear-gradient(to bottom right, #14d088, #4cfc95);
+    --border-radius: 0.5em;
+    --background-activated: #999;
     width: 50%;
+    margin-bottom: 5rem;
 }
 
 // Responsive
