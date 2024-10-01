@@ -1,3 +1,6 @@
+ion-content {
+  --background: white; /* Menetapkan latar belakang menjadi putih */
+}
   .card-content {
     display: flex;
     align-items: center; /* Agar gambar dan konten sejajar secara vertikal */
@@ -6,6 +9,7 @@
     
     .text-content {
       flex: 1; /* Konten akan menggunakan sisa ruang */
+    
     }
   
     .custom-icon {
@@ -20,6 +24,7 @@
     border-radius : 15px;
     background-color: white; /* Menetapkan latar belakang card menjadi putih */
     border: 1px solid #ccc;
+    
   }
 
   .header-card{

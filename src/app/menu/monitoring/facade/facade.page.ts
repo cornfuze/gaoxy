@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { addIcons } from 'ionicons';
-import { cloudyOutline, thermometerOutline, invertModeOutline, waterOutline } from 'ionicons/icons';
+import { NavController } from '@ionic/angular';
+import { cloudyOutline, thermometerOutline, invertModeOutline, waterOutline, sunnyOutline } from 'ionicons/icons';
 import {
   IonContent,
   IonHeader,
@@ -44,17 +45,31 @@ import { HeaderComponent } from '../../../header/header.component';
 })
 export class FacadePage implements OnInit {
 
-  toggleStatus: string = 'Unactive';
+  toggle1Status: string = 'Unactive'; // Status untuk toggle 1
+  toggle2Status: string = 'Unactive'; // Status untuk toggle 2
+  toggle3Status: string = 'Unactive'; // Status untuk toggle 3
 
-  toggleChanged(event: any) {
-    if (event.detail.checked) {
-      this.toggleStatus = 'Active';
-    } else {
-      this.toggleStatus = 'Unactive'; 
-    };
+  // Fungsi untuk menangani perubahan pada toggle 1
+  toggle1Changed(event: any) {
+    this.toggle1Status = event.detail.checked ? 'Active' : 'Unactive';
   }
-  constructor() {
-    addIcons({ cloudyOutline, thermometerOutline, invertModeOutline, waterOutline });
+
+  // Fungsi untuk menangani perubahan pada toggle 2
+  toggle2Changed(event: any) {
+    this.toggle2Status = event.detail.checked ? 'Active' : 'Unactive';
+  }
+
+  // Fungsi untuk menangani perubahan pada toggle 3
+  toggle3Changed(event: any) {
+    this.toggle3Status = event.detail.checked ? 'Active' : 'Unactive';
+  }
+  
+  constructor(private navCtrl: NavController) {
+    addIcons({ cloudyOutline, thermometerOutline, invertModeOutline, waterOutline, sunnyOutline });
+
+  }
+  navigateToTab() {
+    this.navCtrl.navigateForward('/overview');
   }
 
   ngOnInit() {
