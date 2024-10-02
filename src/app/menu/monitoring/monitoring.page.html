@@ -1,14 +1,58 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Monitoring</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Monitoring</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <app-header></app-header>
+  <ion-grid>
+    <ion-row>
+      <!-- Card 1: Navigate to Tab 1 -->
+      <ion-col size="12" size-md="4">
+        <ion-card (click)="navigateToTab()" class="facade-card" >
+          <div class="card-content">
+            <div class="text-content">
+              <ion-card-header>
+                <ion-card-title class="header-card">Gaoxy Facade</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Monitor the condition and growth of microalgae in real-time.
+              </ion-card-content>
+            </div>
+            <ion-icon name="earth-outline" class="custom-icon"></ion-icon>
+          </div>
+        </ion-card>
+      </ion-col>
+
+      <!-- Card 1: Navigate to Tab 2 -->
+      <ion-col size="12" size-md="4">
+        <ion-card class="facade-card" >
+          <div class="card-content">
+            <div class="text-content">
+              <ion-card-header >
+                <ion-card-title class="header-card">Water Quality</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Measure various parameters that affect water cleanliness and safety.
+              </ion-card-content>
+            </div>
+            <ion-icon name="water-outline" class="custom-icon"></ion-icon>
+          </div>
+        </ion-card>
+      </ion-col>
+
+      <!-- Card 1: Navigate to Tab 2 -->
+      <ion-col size="12" size-md="4">
+        <ion-card  (click)="('gaoxy1')" class="facade-card" >
+          <div class="card-content">
+            <div class="text-content">
+              <ion-card-header >
+                <ion-card-title class="header-card">Harvest</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+                Algae growth ready for harvest to ensure optimal conditions for healthy and productive algae growth.
+              </ion-card-content>
+            </div>
+            <ion-icon name="leaf-outline" class="custom-icon"></ion-icon>
+          </div>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>

@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+  <div class="container language d-flex flex-column h-100 p-0 position-relative">
+    <img src="../../../../../assets/images/vector1.png" class="position-absolute">
+    <div class="text-white fw-bold position-relative text-center">
+      <ion-button [routerLink]="['/profile']" size="small" shape="round" color="light" class="back position-absolute">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+      <span class="fs-3 fw-bold">Language</span>
+    </div>
+    <div class="bg-white p-3 pt-4">
+      <div class="mb-4">
+        <span class="text-black fw-bold fs-6 d-block mb-2">Suggested</span>
+        <ion-radio-group class="text-black" value="english">
+          <ion-radio class="d-block mb-2">Indonesian</ion-radio>
+          <ion-radio class="d-block" value="english">English</ion-radio>
+          <hr>
+          <span class="text-black fw-bold fs-6 d-block mb-2">Others</span>
+          <ion-radio class="d-block mb-2">Spanish</ion-radio>
+          <ion-radio class="d-block mb-2">Japanese</ion-radio>
+          <ion-radio class="d-block mb-2">Mandarin</ion-radio>
+          <ion-radio class="d-block mb-2">French</ion-radio>
+          <ion-radio class="d-block mb-2">Arabic</ion-radio>
+          <ion-radio class="d-block mb-2">Russian</ion-radio>
+          <ion-radio class="d-block mb-2">Germany</ion-radio>
+          <ion-radio class="d-block">Hindi</ion-radio>
+        </ion-radio-group>
+      </div>
+    </div>
+  </div>
+</ion-content>

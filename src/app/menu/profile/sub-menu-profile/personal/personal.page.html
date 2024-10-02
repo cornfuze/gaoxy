@@ -1,0 +1,36 @@
+<ion-content>
+  <div class="container personal d-flex flex-column h-100 p-0">
+    <div class="h-25 text-white fw-bold position-relative text-center">
+      <ion-button [routerLink]="['/profile']" size="small" shape="round" color="light" class="back position-absolute">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+      <span class="fs-4 fw-bold">Personal Information</span>
+    </div>
+    <div class="bg-white h-75 rounded-top-5 d-flex flex-column align-items-center">
+      <div class="photo-profile d-flex flex-column align-items-center mt-n1">
+        <img src="../../../../../assets/images/pp.png" class="rounded-circle mb-2">
+        <span class="text-black fw-bold fs-5">Edit Profile</span>
+      </div>
+      <div class="form-input-profile mt-2">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" value="Admin123" required>
+        </div>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" value="Lorem Ipsum" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" value="admin123@gmail.com" required>
+        </div>
+        <div class="mb-4">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" value="1234567" required>
+        </div>
+        <ion-button id="save" expand="block" class="mx-auto text-capitalize">Save Changes</ion-button>
+        <ion-alert trigger="save" header="Just Alert!" [buttons]="[{'text':'Cancel'}, {'text':'OK'}]"></ion-alert>
+      </div>
+    </div>
+  </div>
+</ion-content>

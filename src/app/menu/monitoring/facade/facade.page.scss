@@ -1,0 +1,97 @@
+.card-content {
+    display: flex;
+    align-items: center; /* Agar gambar dan konten sejajar secara vertikal */
+    justify-content: space-between; /* Memisahkan gambar dan konten */
+  
+    .text-content {
+      flex: 1; /* Konten akan menggunakan sisa ruang */
+    }
+  
+    .progress-circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      margin-left: -30px;
+    }
+    
+    svg {
+      transform: rotate(0deg); /* Rotasi untuk memulai dari atas */
+    }
+    
+    .circle-bg {
+      fill: none;
+      stroke: #eee; /* Warna latar belakang lingkaran */
+      stroke-width: 2.8;
+    }
+    
+    .circle {
+      fill: none;
+      stroke: #4caf50; /* Warna progress */
+      stroke-width: 2.8;
+      stroke-linecap: round;
+      transition: stroke-dasharray 0.5s ease;
+    }
+    
+    .percentage {
+      fill: #4caf50; /* Warna teks di tengah */
+      font-size: 0.5em;
+      text-anchor: middle;
+    }
+    
+    .icon-indicator {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Mengatur posisi ke kanan */
+        flex: 0; /* Menyesuaikan fleksibilitas sesuai kebutuhan */
+
+      }
+
+      .indicator-toggle{
+        --handle-background: #cbc7c77b; /* Warna handle saat toggle off */
+        --handle-background-checked: #fff; /* Warna handle saat toggle on */
+        --handle-border-radius: 50%; /* Membuat handle berbentuk bulat */
+        --handle-size: 22px; /* Ukuran handle */
+        --handle-box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3); /* Inner shadow pada handle */
+        --background-checked: #4caf50; /* Warna background saat toggle on */
+        align-items: start;
+        padding: 10px;
+      }   
+      
+      .indicator{
+        display: flex;
+        padding-right: 30px;
+        font-size: 30px;
+        justify-items: auto;
+        gap: 10px ;
+      }
+      .good{
+        color: rgb(0, 255, 38);
+      }
+      .medium{
+        color: rgb(251, 255, 11);
+      }
+      .bad{
+        color: rgb(237, 27, 27);
+      }
+      
+  }
+
+  ion-content {
+    --background: white; /* Menetapkan latar belakang menjadi putih */
+  }
+
+  ion-card {
+    border-radius : 15px;
+    background-color: white; /* Menetapkan latar belakang card menjadi putih */
+    border: 1px solid #ccc;
+  }
+
+  .header-card{
+    color: black;
+  }
+
+  h3{
+    color: rgb(98, 96, 96);
+  }
+
