@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { addIcons } from 'ionicons';
-import { earthOutline, waterOutline, leafOutline} from 'ionicons/icons';
+import { earthOutline, waterOutline, leafOutline } from 'ionicons/icons';
 import { NavController } from '@ionic/angular';
 import {
   IonContent,
@@ -19,6 +19,7 @@ import {
   IonCardContent,
 } from '@ionic/angular/standalone';
 import { HeaderComponent } from 'src/app/header/header.component';
+import { RouterModule } from '@angular/router'
 
 
 @Component({
@@ -42,6 +43,7 @@ import { HeaderComponent } from 'src/app/header/header.component';
     CommonModule,
     FormsModule,
     HeaderComponent,
+    RouterModule
   ],
 })
 export class MonitoringPage implements OnInit {

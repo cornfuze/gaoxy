@@ -4,7 +4,7 @@
     <ion-row>
       <!-- Card 1: Navigate to Tab 1 -->
       <ion-col size="12" size-md="4">
-        <ion-card (click)="navigateToTab()" class="facade-card">
+        <ion-card class="facade-card" [routerLink]="['/monitoring/facade']" routerLinkActive="active">
           <div class="card-content">
             <div class="text-content">
               <ion-card-header>

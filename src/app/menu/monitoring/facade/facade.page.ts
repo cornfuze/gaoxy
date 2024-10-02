@@ -19,6 +19,7 @@ import {
   IonIcon,
 } from '@ionic/angular/standalone';
 import { HeaderComponent } from '../../../header/header.component';
+import { RouterModule } from '@angular/router'
 
 @Component({
   selector: 'app-facade',
@@ -41,6 +42,7 @@ import { HeaderComponent } from '../../../header/header.component';
     CommonModule,
     FormsModule,
     HeaderComponent,
+    RouterModule
   ],
 })
 export class FacadePage implements OnInit {
