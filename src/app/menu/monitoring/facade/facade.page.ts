@@ -63,7 +63,7 @@ export class FacadePage implements OnInit {
   toggle3Changed(event: any) {
     this.toggle3Status = event.detail.checked ? 'Active' : 'Unactive';
   }
-  
+
   constructor(private navCtrl: NavController) {
     addIcons({ cloudyOutline, thermometerOutline, invertModeOutline, waterOutline, sunnyOutline });
 

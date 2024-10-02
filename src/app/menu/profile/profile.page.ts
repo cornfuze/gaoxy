@@ -1,68 +1,41 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import {
-  IonContent,
-  IonIcon,
-  IonButton,
-  IonAlert,
-  IonHeader,
-} from '@ionic/angular/standalone';
-import { addIcons } from 'ionicons';
-import {
-  logOutOutline,
-  personOutline,
-  chevronForward,
-  settingsOutline,
-  warningOutline,
-  globeOutline,
-  helpCircleOutline,
-  moon,
-  cameraOutline,
-} from 'ionicons/icons';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core'
+import { IonContent, IonIcon, IonButton, IonAlert } from '@ionic/angular/standalone'
+import { RouterModule } from '@angular/router'
+import { addIcons } from 'ionicons'
+import { logOutOutline, personOutline, chevronForward, settingsOutline, warningOutline, globeOutline, helpCircleOutline, moon, cameraOutline } from 'ionicons/icons'
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
   styleUrls: ['./profile.page.scss'],
   standalone: true,
-  imports: [IonHeader, IonAlert, IonContent, IonIcon, IonButton],
+  imports: [IonAlert, IonContent, IonIcon, IonButton, RouterModule]
 })
 export class ProfilePage implements OnInit {
-  @ViewChild('fileInput') fileInput!: ElementRef<HTMLInputElement>;
-  profileImage: string = '../../../assets/images/pp.png';
+  @ViewChild('fileInput') fileInput!: ElementRef<HTMLInputElement>
+  profileImage: string = '../../../assets/images/pp.png'
 
   constructor() {
-    addIcons({
-      logOutOutline,
-      moon,
-      cameraOutline,
-      personOutline,
-      chevronForward,
-      settingsOutline,
-      warningOutline,
-      globeOutline,
-      helpCircleOutline,
-    });
+    addIcons({ logOutOutline, moon, cameraOutline, personOutline, chevronForward, settingsOutline, warningOutline, globeOutline, helpCircleOutline });
   }
 
-  ngOnInit() {
-    console.log('ProfilePage initialized');
-  }
+  ngOnInit() { }
 
   triggerFileInput() {
-    this.fileInput.nativeElement.click();
+    this.fileInput.nativeElement.click()
   }
 
   onFileSelected(event: Event) {
-    const input = event.target as HTMLInputElement;
+    const input = event.target as HTMLInputElement
     if (input.files && input.files.length) {
-      const file = input.files[0];
-      const reader = new FileReader();
+      const file = input.files[0]
+      const reader = new FileReader()
 
       reader.onload = () => {
-        this.profileImage = reader.result as string;
-      };
+        this.profileImage = reader.result as string
+      }
 
-      reader.readAsDataURL(file);
+      reader.readAsDataURL(file)
     }
   }
 
@@ -70,16 +43,16 @@ export class ProfilePage implements OnInit {
     {
       text: 'Cancel',
       role: 'cancel',
-      cssClass: 'alert-button-cancel',
+      cssClass: 'alert-button-cancel'
     },
     {
       text: 'Logout',
       role: 'logout',
-      cssClass: 'alert-button-logout',
+      cssClass: 'alert-button-logout'
     },
-  ];
+  ]
 
   setResult(event: CustomEvent) {
-    console.log(`Dismissed with role: ${event.detail.role}`);
+    console.log(`Dismissed with role: ${event.detail.role}`)
   }
 }

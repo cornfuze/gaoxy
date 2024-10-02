@@ -1,108 +1,130 @@
 .card-content {
   display: flex;
-  flex-direction: column; /* Mengatur semua konten secara vertikal */
-  align-items: flex-start; /* Posisi konten kiri secara vertikal */
+  flex-direction: column;
+  /* Mengatur semua konten secara vertikal */
+  align-items: flex-start;
+  /* Posisi konten kiri secara vertikal */
 
   .header-section {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%; /* Memastikan header-section mengambil lebar penuh */
-      padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* Memastikan header-section mengambil lebar penuh */
+    padding: 0 15px;
   }
-  
+
 
   .progress-container {
-      display: flex; /* Mengatur elemen secara horizontal */
-      align-items: center; /* Menyelaraskan konten secara vertikal */
-      justify-content: space-between; /* Memberi jarak antara progress circle dan icon */
-      margin: 20px 0; /* Margin vertikal jika diperlukan */
-      width: 100%;
-      padding: 0 30px;
+    display: flex;
+    /* Mengatur elemen secara horizontal */
+    align-items: center;
+    /* Menyelaraskan konten secara vertikal */
+    justify-content: space-between;
+    /* Memberi jarak antara progress circle dan icon */
+    margin: 20px 0;
+    /* Margin vertikal jika diperlukan */
+    width: 100%;
+    padding: 0 30px;
   }
-  
+
   .progress-circle {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
-  
+
   .icon_indicator {
-      display: flex;
-      align-items: center; /* Menyelaraskan icon secara vertikal */
-      justify-content: flex-end; /* Menempatkan icon di ujung kanan */
+    display: flex;
+    align-items: center;
+    /* Menyelaraskan icon secara vertikal */
+    justify-content: flex-end;
+    /* Menempatkan icon di ujung kanan */
   }
-  
+
   .indicator {
-      display: flex;
-      font-size: 30px;
-      gap: 10px; /* Jarak antar icon */
+    display: flex;
+    font-size: 30px;
+    gap: 10px;
+    /* Jarak antar icon */
   }
-  
-  
-  
+
+
+
   svg {
-      transform: rotate(0deg); /* Rotasi untuk memulai dari atas */
+    transform: rotate(0deg);
+    /* Rotasi untuk memulai dari atas */
   }
-  
+
   .circle-bg {
-      fill: none;
-      stroke: #eee; /* Warna latar belakang lingkaran */
-      stroke-width: 2.8;
+    fill: none;
+    stroke: #eee;
+    /* Warna latar belakang lingkaran */
+    stroke-width: 2.8;
   }
-  
+
   .circle {
-      fill: none;
-      stroke: #4caf50; /* Warna progress */
-      stroke-width: 2.8;
-      stroke-linecap: round;
-      transition: stroke-dasharray 0.5s ease;
+    fill: none;
+    stroke: #4caf50;
+    /* Warna progress */
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.5s ease;
   }
-  
+
   .percentage {
-      fill: #4caf50; /* Warna teks di tengah */
-      font-size: 0.5em;
-      text-anchor: middle;
+    fill: #4caf50;
+    /* Warna teks di tengah */
+    font-size: 0.5em;
+    text-anchor: middle;
   }
 
   .indicator-toggle {
-      --handle-background: #cbc7c77b; /* Warna handle saat toggle off */
-      --handle-background-checked: #fff; /* Warna handle saat toggle on */
-      --handle-border-radius: 50%; /* Membuat handle berbentuk bulat */
-      --handle-size: 22px; /* Ukuran handle */
-      --handle-box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3); /* Inner shadow pada handle */
-      --background-checked: #4caf50; /* Warna background saat toggle on */
-      padding-left: 10px;
+    --handle-background: #cbc7c77b;
+    /* Warna handle saat toggle off */
+    --handle-background-checked: #fff;
+    /* Warna handle saat toggle on */
+    --handle-border-radius: 50%;
+    /* Membuat handle berbentuk bulat */
+    --handle-size: 22px;
+    /* Ukuran handle */
+    --handle-box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Inner shadow pada handle */
+    --background-checked: #4caf50;
+    /* Warna background saat toggle on */
+    padding-left: 10px;
   }
 
   .indicator {
-      display: flex;
-      font-size: 30px;
-      justify-items: auto;
-      gap: 10px;
+    display: flex;
+    font-size: 30px;
+    justify-items: auto;
+    gap: 10px;
   }
 
   .good {
-      color: rgb(0, 255, 38);
+    color: rgb(0, 255, 38);
   }
 
   .medium {
-      color: rgb(215, 187, 25);
+    color: rgb(215, 187, 25);
   }
 
   .bad {
-      color: rgb(237, 27, 27);
+    color: rgb(237, 27, 27);
   }
 }
 
 ion-content {
-  --background: white; /* Menetapkan latar belakang menjadi putih */
+  --background: white;
+  /* Menetapkan latar belakang menjadi putih */
 }
 
 ion-card {
   border-radius: 15px;
-  background-color: white; /* Menetapkan latar belakang card menjadi putih */
+  background-color: white;
+  /* Menetapkan latar belakang card menjadi putih */
   border: 1px solid #ccc;
 }
 
@@ -113,10 +135,10 @@ ion-card {
 h3 {
   color: rgb(98, 96, 96);
   font-size: 15px;
-  
+
 }
 
-.toggle-row{
+.toggle-row {
   padding-top: 15px;
 }
 

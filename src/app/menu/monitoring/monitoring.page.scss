@@ -1,40 +1,41 @@
-ion-content {
-  --background: white; /* Menetapkan latar belakang menjadi putih */
-}
   .card-content {
     display: flex;
-    align-items: center; /* Agar gambar dan konten sejajar secara vertikal */
-    justify-content: space-between; /* Memisahkan gambar dan konten */
-    
-    
+    align-items: center;
+    /* Agar gambar dan konten sejajar secara vertikal */
+    justify-content: space-between;
+    /* Memisahkan gambar dan konten */
+
+
     .text-content {
-      flex: 1; /* Konten akan menggunakan sisa ruang */
-    
+      flex: 1;
+      /* Konten akan menggunakan sisa ruang */
     }
-  
+
     .custom-icon {
-        font-size: 80px; /* Atur ukuran sesuai kebutuhan */
-        color: #176943;     /* Mengubah warna ikon jika diperlukan */
-        padding: 10px;
-      }
-      
+      font-size: 80px;
+      /* Atur ukuran sesuai kebutuhan */
+      color: #176943;
+      /* Mengubah warna ikon jika diperlukan */
+      padding: 10px;
+    }
+
   }
 
   ion-card {
-    border-radius : 15px;
-    background-color: white; /* Menetapkan latar belakang card menjadi putih */
+    border-radius: 15px;
+    background-color: white;
+    /* Menetapkan latar belakang card menjadi putih */
     border: 1px solid #ccc;
-    
   }
 
-  .header-card{
+  .header-card {
     color: black;
   }
 
   ion-grid {
     padding: 0;
-}
+  }
 
-ion-col {
+  ion-col {
     padding: 0 5px;
-}
+  }

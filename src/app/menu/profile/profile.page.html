@@ -1,52 +1,25 @@
 <ion-content [fullscreen]="true">
   <div class="container profile pt-5">
-    <img src="../../../assets/images/plant.png" class="plant" />
+    <img src="../../../assets/images/plant.png" class="plant">
     <div class="row header">
       <div class="col position-relative">
         <h1 class="text-white text-center">Profile</h1>
-        <ion-button
-          id="logout"
-          color="light"
-          shape="round"
-          class="logout position-absolute top-0 mt-n1"
-        >
-          <ion-icon
-            slot="icon-only"
-            class="text-danger fs-3 m-0 p-0 ms-1"
-            name="log-out-outline"
-          ></ion-icon>
+        <ion-button id="logout" color="light" shape="round" class="logout position-absolute top-0 mt-n1">
+          <ion-icon slot="icon-only" class="text-danger fs-3 m-0 p-0 ms-1" name="log-out-outline"></ion-icon>
         </ion-button>
-        <ion-alert
-          trigger="logout"
-          header="Logout"
-          message="Are you sure you want to logout?"
-          [buttons]="logoutButtons"
-          (didDismiss)="setResult($event)"
-        ></ion-alert>
+        <ion-alert trigger="logout" header="Logout" message="Are you sure you want to logout?" [buttons]="logoutButtons"
+          (didDismiss)="setResult($event)"></ion-alert>
       </div>
     </div>
     <div class="row main-menu position-relative bg-white rounded-top-5 p-3">
-      <ion-button
-        color="dark"
-        shape="round"
-        class="dark-button start-0 top-0 z-1 mt-1"
-      >
+      <ion-button color="dark" shape="round" class="dark-button start-0 top-0 z-1 mt-1">
         <ion-icon slot="icon-only" name="moon"></ion-icon>
       </ion-button>
       <div class="row pp">
         <div class="col pp d-flex flex-column align-items-center">
-          <div
-            class="pp-holder position-relative cursor-pointer"
-            (click)="triggerFileInput()"
-          >
-            <img [src]="profileImage" class="rounded-circle mb-3" />
-            <input
-              type="file"
-              accept="image/*"
-              #fileInput
-              (change)="onFileSelected($event)"
-              hidden
-            />
+          <div class="pp-holder position-relative cursor-pointer" (click)="triggerFileInput()">
+            <img [src]="profileImage" class="rounded-circle mb-3">
+            <input type="file" accept="image/*" #fileInput (change)="onFileSelected($event)" hidden>
             <span class="change-pp position-absolute rounded-circle">
               <ion-icon name="camera-outline" class="fs-3 mt-1"></ion-icon>
             </span>
@@ -54,101 +27,50 @@
           <h2 class="text-black fw-bold">Admin123</h2>
           <p class="text-black fw-light">admin123&commat;gmail.com</p>
         </div>
-      </div>
-      <!-- tutup row pp -->
+      </div> <!-- tutup row pp -->
       <h2 class="text-black ms-2 mb-n1">Account</h2>
       <ul class="list-group list-group-flush">
         <!-- Personal Information -->
         <li class="list-group-item">
-          <ion-button fill="clear" expand="full">
-            <ion-icon
-              slot="start"
-              name="person-outline"
-              color="success"
-            ></ion-icon>
-            <span class="text-capitalize ms-3 me-auto text-black"
-              >Personal Information</span
-            >
-            <ion-icon
-              slot="end"
-              name="chevron-forward"
-              color="success"
-            ></ion-icon>
+          <ion-button fill="clear" expand="full" [routerLink]="['/profile/personal']">
+            <ion-icon slot="start" name="person-outline" color="success"></ion-icon>
+            <span class="text-capitalize ms-3 me-auto text-black">Personal Information</span>
+            <ion-icon slot="end" name="chevron-forward" color="success"></ion-icon>
           </ion-button>
         </li>
         <!-- Settings -->
         <li class="list-group-item">
-          <ion-button fill="clear" expand="full">
-            <ion-icon
-              slot="start"
-              name="settings-outline"
-              color="success"
-            ></ion-icon>
-            <span class="text-capitalize ms-3 me-auto text-black"
-              >Settings</span
-            >
-            <ion-icon
-              slot="end"
-              name="chevron-forward"
-              color="success"
-            ></ion-icon>
+          <ion-button fill="clear" expand="full" [routerLink]="['/profile/settings']">
+            <ion-icon slot="start" name="settings-outline" color="success"></ion-icon>
+            <span class="text-capitalize ms-3 me-auto text-black">Settings</span>
+            <ion-icon slot="end" name="chevron-forward" color="success"></ion-icon>
           </ion-button>
         </li>
         <!-- Report Problem / Bug -->
         <li class="list-group-item">
-          <ion-button fill="clear" expand="full">
-            <ion-icon
-              slot="start"
-              name="warning-outline"
-              color="success"
-            ></ion-icon>
-            <span class="text-capitalize ms-3 me-auto text-black"
-              >Report Problem / Bug</span
-            >
-            <ion-icon
-              slot="end"
-              name="chevron-forward"
-              color="success"
-            ></ion-icon>
+          <ion-button fill="clear" expand="full" [routerLink]="['/profile/report']">
+            <ion-icon slot="start" name="warning-outline" color="success"></ion-icon>
+            <span class="text-capitalize ms-3 me-auto text-black">Report Problem / Bug</span>
+            <ion-icon slot="end" name="chevron-forward" color="success"></ion-icon>
           </ion-button>
         </li>
         <!-- Language -->
         <li class="list-group-item">
-          <ion-button fill="clear" expand="full">
-            <ion-icon
-              slot="start"
-              name="globe-outline"
-              color="success"
-            ></ion-icon>
-            <span class="text-capitalize ms-3 me-auto text-black"
-              >Language</span
-            >
-            <ion-icon
-              slot="end"
-              name="chevron-forward"
-              color="success"
-            ></ion-icon>
+          <ion-button fill="clear" expand="full" [routerLink]="['/profile/language']">
+            <ion-icon slot="start" name="globe-outline" color="success"></ion-icon>
+            <span class="text-capitalize ms-3 me-auto text-black">Language</span>
+            <ion-icon slot="end" name="chevron-forward" color="success"></ion-icon>
           </ion-button>
         </li>
         <!-- FAQ -->
         <li class="list-group-item">
-          <ion-button fill="clear" expand="full">
-            <ion-icon
-              slot="start"
-              name="help-circle-outline"
-              color="success"
-            ></ion-icon>
+          <ion-button fill="clear" expand="full" [routerLink]="['/profile/faq']">
+            <ion-icon slot="start" name="help-circle-outline" color="success"></ion-icon>
             <span class="text-capitalize ms-3 me-auto text-black">FAQ</span>
-            <ion-icon
-              slot="end"
-              name="chevron-forward"
-              color="success"
-            ></ion-icon>
+            <ion-icon slot="end" name="chevron-forward" color="success"></ion-icon>
           </ion-button>
         </li>
       </ul>
-    </div>
-    <!-- tutup row main-menu -->
-  </div>
-  <!-- tutup div container -->
+    </div> <!-- tutup row main-menu -->
+  </div> <!-- tutup div container -->
 </ion-content>

@@ -5,7 +5,7 @@ import { HomePage } from '../home/home.page'
 import { MonitoringPage } from '../monitoring/monitoring.page'
 import { ControlPage } from '../control/control.page'
 import { ProfilePage } from '../profile/profile.page'
-import { FacadePage } from '../monitoring/facade/facade.page'
+// import { FacadePage } from '../monitoring/facade/facade.page'
 
 export const routes: Routes = [
     {
@@ -17,7 +17,7 @@ export const routes: Routes = [
             { path: 'monitoring', component: MonitoringPage },
             { path: 'control', component: ControlPage },
             { path: 'profile', component: ProfilePage },
-            { path: 'facade', component: FacadePage}
+            // { path: 'facade', component: FacadePage }
         ]
     }
 ]

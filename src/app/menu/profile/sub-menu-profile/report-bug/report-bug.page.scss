@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+.container.report-bug {
+    box-sizing: content-box;
+    font-family: "Poppins", sans-serif;
+    background-color: #176943;
+}
+
+ion-button.back {
+    left: 1rem;
+    width: 3rem;
+}
+
+.fw-bold.text-white {
+    padding-top: 2rem;
+    height: 20%;
+}
+
+.bg-white.p-3 {
+    height: 80%;
+}
+
+textarea.form-control {
+    height: 10rem;
+}
+
+ion-button.custom-button {
+    width: 12rem;
+    --border-radius: 0.5em;
+}
+
+ion-button.mx-auto {
+    --background: linear-gradient(to bottom right, #14d088, #4cfc95);
+    --border-radius: 0.5em;
+    --background-activated: #999;
+    width: 40%;
+    margin-bottom: 5rem;
+}
+
+// Responsive
+@media only screen and (max-width: 576px) {
+    .position-relative.text-white {
+        padding-top: 3.5rem;
+    }
+
+    ion-button.mx-auto {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
