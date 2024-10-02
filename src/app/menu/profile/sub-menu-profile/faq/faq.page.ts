@@ -1,20 +1,32 @@
-import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+import { Component, OnInit } from '@angular/core'
+import { IonContent, IonIcon, IonButton, IonAccordionGroup, IonAccordion, IonItem, IonLabel } from '@ionic/angular/standalone'
+import { RouterModule } from '@angular/router'
+import { addIcons } from 'ionicons'
+import { arrowBackOutline } from 'ionicons/icons'
 
 @Component({
   selector: 'app-faq',
   templateUrl: './faq.page.html',
   styleUrls: ['./faq.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonAccordionGroup, IonButton, IonContent, RouterModule, IonIcon, IonAccordion, IonItem, IonLabel]
 })
 export class FaqPage implements OnInit {
 
-  constructor() { }
+  constructor() {
+    addIcons({ arrowBackOutline });
+  }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  setActive(event: Event) {
+    // Menghapus semua kelas 'active' dari semua tombol
+    const buttons = document.querySelectorAll('.segment-btn');
+    buttons.forEach((button) => button.classList.remove('active'));
+
+    // Menambahkan kelas 'active' ke tombol yang sedang diklik
+    const clickedButton = event.currentTarget as HTMLElement;
+    clickedButton.classList.add('active');
   }
 
 }

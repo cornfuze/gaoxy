@@ -1,13 +1,48 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>faq</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">faq</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container language d-flex flex-column h-100 p-0 position-relative">
+    <img src="../../../../../assets/images/vector2.png" class="position-absolute">
+    <div class="text-white fw-bold position-relative text-center">
+      <ion-button [routerLink]="['/profile']" size="small" shape="round" color="light" class="back position-absolute">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+      <span class="fs-3 fw-bold">FAQ</span>
+    </div>
+    <div class="main-content bg-white p-3 pt-4">
+      <ion-button class="segment-btn text-capitalize fw-medium active" (click)="setActive($event)">General</ion-button>
+      <ion-button class="segment-btn text-capitalize fw-medium" (click)="setActive($event)">Profile</ion-button>
+      <ion-button class="segment-btn text-capitalize fw-medium" (click)="setActive($event)">Monitoring</ion-button>
+
+      <!-- Accordion -->
+      <ion-accordion-group value="first" expand="inset" class="mt-4">
+        <ion-accordion value="first">
+          <ion-item slot="header" color="custom">
+            <ion-label>What is GAOXY?</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">Lorem ipsum dolor sit, amet consectetu adipisicing elit. Qui velit
+            rerum, quo odio necessitatibus impedit! Ipsum mollitia omnis.</div>
+        </ion-accordion>
+        <ion-accordion>
+          <ion-item slot="header" color="custom">
+            <ion-label>What is Microalgae Facade?</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">Lorem ipsum dolor sit, amet consectetu adipisicing elit. Qui velit
+            rerum, quo odio necessitatibus impedit! Ipsum mollitia omnis.</div>
+        </ion-accordion>
+        <ion-accordion>
+          <ion-item slot="header" color="custom">
+            <ion-label>What is Carbon Footprint</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">Lorem ipsum dolor sit, amet consectetu adipisicing elit. Qui velit
+            rerum, quo odio necessitatibus impedit! Ipsum mollitia omnis.</div>
+        </ion-accordion>
+        <ion-accordion>
+          <ion-item slot="header" color="custom">
+            <ion-label>Why GAOXY?</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">Lorem ipsum dolor sit, amet consectetu adipisicing elit. Qui velit
+            rerum, quo odio necessitatibus impedit! Ipsum mollitia omnis.</div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </div>
+  </div>
 </ion-content>
