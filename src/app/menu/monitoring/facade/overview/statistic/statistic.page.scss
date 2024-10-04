@@ -1,0 +1,76 @@
+.Header {
+    background-color: #2e7d32;
+    padding: 10px;
+  }
+  
+  ion-select {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0 10px;
+    box-shadow: none;
+  }
+  
+  ion-item {
+    --background: transparent;
+    --box-shadow: none;
+    background: transparent;
+  }
+  
+  ion-list {
+    background: transparent;
+  }
+  
+  .align-right {
+    margin-left: auto;
+    text-align: right;
+  }
+  
+  .percentage {
+    font-size: 1.5em;
+  }
+  
+  .status {
+    font-size: 1.5em;
+  }
+  
+  svg {
+    transform: rotate(0deg);
+    /* Rotate to match the correct start position */
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.5;
+    /* Background circle */
+  }
+  
+  .circle {
+    fill: none;
+    stroke: #4caf50;
+    /* Green progress */
+    stroke-width: 3.5;
+    stroke-linecap: round;
+    transition: stroke-dasharray 0.5s ease;
+  }
+  
+  .percentage {
+    fill: #4caf50;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+  
+  .status {
+    fill: black;
+    font-size: 0.3em;
+    text-anchor: middle;
+  }
+  
+  .progress-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

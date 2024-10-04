@@ -1,13 +1,77 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>overview</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">overview</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="header">Gaoxy 1   
+    <div class="card">
+        <div class="density">Density</div>
+        <div class="percentage">50 %</div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="flex justify-between text-sm text-gray-600">
+            <span>Early</span>    
+            <span>Harvest</span>
+        </div>
+    </div>
+  </div>
+  <div class="overview">
+    <div class="overview-title">
+        <h1>OverView</h1>    
+        <h6 class="text-update">updated 1m ago</h6>
+    </div>
+    <div class="card-list">
+        <ion-card class="card-content">
+            <ion-icon name="water-outline" class="card-icon"></ion-icon>
+            <div class="status">
+                <div>O2 Level</div>
+                <div>20%</div>
+            </div>
+            <div class="card-notif">
+                <ion-badge color="success" class="good-badge">Good</ion-badge>
+            </div>
+        </ion-card>
+
+        <ion-card class="card-content">
+            <ion-icon name="cloud-outline" class="card-icon"></ion-icon>
+            <div class="status">
+                <div>CO2 Level</div>
+                <div>20%</div>
+            </div>
+            <div class="card-notif">
+                <ion-badge color="success" class="good-badge">Good</ion-badge>
+            </div>
+        </ion-card>
+
+        <ion-card class="card-content">
+            <ion-icon name="thermometer-outline" class="card-icon"></ion-icon>
+            <div class="status">
+                <div>Temperature Level</div>
+                <div>20%</div>
+            </div>
+            <div class="card-notif">
+                <ion-badge color="success" class="good-badge">Good</ion-badge>
+            </div>
+        </ion-card>
+
+        <ion-card class="card-content">
+            <ion-icon name="invert-mode-outline" class="card-icon"></ion-icon>
+            <div class="status">
+                <div>Humidity Level</div>
+                <div>20%</div>
+            </div>
+            <div class="card-notif">
+                <ion-badge color="success" class="bad-badge">Bad</ion-badge>
+            </div>
+        </ion-card>
+
+        <ion-card class="card-content">
+            <ion-icon name="sunny-outline" class="card-icon"></ion-icon>
+            <div class="status">
+                <div>Light Intensity Level</div>
+                <div>20%</div>
+            </div>
+            <div class="card-notif">
+                <ion-badge color="success" class="med-badge">Medium</ion-badge>
+            </div>
+        </ion-card>
+    </div>  
+  </div>
 </ion-content>
