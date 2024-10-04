@@ -16,7 +16,7 @@ export class ProfilePage implements OnInit {
   profileImage: string = '../../../assets/images/pp.png'
 
   constructor() {
-    addIcons({ logOutOutline, moon, cameraOutline, personOutline, chevronForward, settingsOutline, warningOutline, globeOutline, helpCircleOutline });
+    addIcons({ logOutOutline, moon, cameraOutline, personOutline, chevronForward, settingsOutline, warningOutline, globeOutline, helpCircleOutline })
   }
 
   ngOnInit() { }
