@@ -1,0 +1,97 @@
+
+<ion-content [fullscreen]="true">
+  <div class="header-container"> <!-- Container untuk header dan stat -->
+    <div class="header">
+      <ion-button shape="round" slot="start">
+        <ion-icon slot="icon-only" name="chevron-back-outline"></ion-icon>
+      </ion-button>
+      <h1>Water volume</h1>
+      <ion-icon slot="end" name="globe-outline" class="card-icon"></ion-icon>
+    </div>
+    <div class="stat">
+      <div class="volume">200</div>
+      <div class="unit">Unit: ml <i class="fas fa-caret-down"></i></div>
+    </div>
+  </div> 
+  <div class="overview">
+    <div class="overview-title">
+        <h1>Water Quality</h1>
+        <h4>Monitoring quality of Water</h4>    
+        <div class="dropdown-container">
+          <ion-item lines="none" class="custom-dropdown">
+            <ion-label class="dropdown-label">Gaoxy 1</ion-label>
+            <ion-select interface="popover" placeholder="Gaoxy 1" toggleIcon="caret-down-sharp">
+              <ion-select-option value="gaoxy1">Gaoxy 1</ion-select-option>
+              <ion-select-option value="gaoxy2">Gaoxy 2</ion-select-option>
+              <ion-select-option value="gaoxy3">Gaoxy 3</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+    </div>
+    <div class="card-list">
+      <ion-card class="card-content">
+        <ion-card-header class="water-card">
+          <ion-card-title class="water-title">
+            <ion-icon name="thermometer-outline"></ion-icon> Temperature
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="horizontal-content">
+            <div>30°C</div>
+            <ion-chip color="success">
+              <ion-label>Good</ion-label>
+            </ion-chip>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="card-content">
+        <ion-card-header class="water-card">
+          <ion-card-title class="water-title">
+            <ion-icon name="cloud-outline"></ion-icon> CO2 Level
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="horizontal-content">
+            <div>20%</div>
+            <ion-chip color="success">
+              <ion-label>Good</ion-label>
+            </ion-chip>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="card-content">
+        <ion-card-header class="water-card">
+          <ion-card-title class="water-title">
+            <ion-icon name="thermometer-outline"></ion-icon> Temperature Level
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="horizontal-content">
+            <div>20%</div>
+            <ion-chip color="success">
+              <ion-label>Good</ion-label>
+            </ion-chip>
+          </div>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="card-content">
+        <ion-card-header class="water-card">
+          <ion-card-title class="water-title">
+            <ion-icon name="invert-mode-outline"></ion-icon> Humidity Level
+          </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="horizontal-content">
+            <div>20%</div>
+            <ion-chip color="danger">
+              <ion-label>Bad</ion-label>
+            </ion-chip>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div> 
+  </div>
+</ion-content>

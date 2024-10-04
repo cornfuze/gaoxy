@@ -1,0 +1,203 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ion-content {
+    --background: #176943;
+}
+
+/* Container untuk header dan statistik */
+.header-container {
+    display: flex;
+    flex-direction: column; /* Mengatur elemen dalam kolom */
+    align-items: center; /* Menempatkan elemen di tengah secara horizontal */
+    justify-content: center; /* Menempatkan elemen di tengah secara vertikal */
+    height: 50vh;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Mengatur styling umum untuk header */
+  .header {
+    width: 100%;
+    display: flex; // add flexbox to the header
+    justify-content: space-between; // justify content to the edges
+    align-items: center; // center the content vertically
+    padding: 20px; // add some padding to the heade
+    text-align: center;
+    padding: 20px 0; /* Memberikan padding atas dan bawah pada header */
+    color: white; /* Mengubah warna teks */
+    margin-top: 0;
+  }
+  .header h1 {
+    flex: 1; // make the text take up the remaining space
+    text-align: center; // center the text horizontally
+  }
+  
+  .header ion-icon[slot="end"] {
+    margin-left: 10px; // add some margin to the icon
+  }
+  
+  /* Mengatur tampilan statistik */
+  .stat {
+    display: flex;
+    flex-direction: column; /* Mengatur konten stat dalam kolom */
+    align-items: center; /* Menempatkan elemen di tengah */
+    margin: 20px 0; /* Menambahkan jarak atas dan bawah */
+    color: white; /* Mengubah warna teks */
+  }
+  
+  /* Mengatur tampilan volume dan unit */
+  .volume {
+    font-size: 72px;
+    margin: 0; /* Menghilangkan margin untuk memastikan keselarasan */
+  }
+  
+  .unit {
+    font-size: 18px;
+  }
+
+.water-card {
+    flex: 1 1 calc(50% - 10px);
+    border-radius: 12px; // Radius sudut
+    text-align: center;
+    background-color: white; // Background card
+    padding: 15px; // Padding di dalam card
+}
+
+.water-title {
+    font-size: 15px;
+    align-items: center;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.text {
+    color: black;
+}
+
+.text-gray-600 {
+    color: black; 
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between; // Mengatur teks agar berada di ujung kiri dan kanan
+}
+
+.text-update {
+    color: rgb(0, 0, 0);
+}
+
+.overview {
+    background-color: #f5f5f5;
+    border-radius: 40px 40px 0 0;
+    position: absolute; 
+    margin-bottom:0 ;
+}
+
+.overview-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: black;
+}
+
+.dropdown-container {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.custom-dropdown {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px rgb(123, 121, 121); // Border hitam
+    --background: transparent; // Hindari warna background berlapis
+    --padding-start: 15px;
+    --padding-end: 15px;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    width: 150px;
+    
+}
+
+h4 {
+    color: rgb(177, 177, 177);
+    margin-top: 0px;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; // Membuat card turun ke baris berikutnya
+    justify-content: space-between; // Mengatur jarak antar card secara horizontal
+    padding: 10px; // Menjaga jarak antara tepi container dan card
+    box-sizing: border-box; // Pastikan padding terhitung dalam total lebar
+}
+
+.card-content {
+    flex-basis: 45%; /* adjust the width of each card */
+    margin: 10px; /* add some margin between cards */
+    box-sizing: border-box; // Menghitung padding dan margin dalam lebar card
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white; // Tambahkan background untuk melihat batas card
+    border-radius: 12px; // Radius sudut jika diperlukan
+    
+}
+
+.horizontal-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 10px; // Memberi jarak antara icon dan teks
+}
+
+.status {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card-notif {
+    margin-top: 10px;
+}
+
+.good-badge {
+    background-color: green;
+}
+
+.bad-badge {
+    background-color: red;
+}
+
+ion-row {
+    --ion-grid-column-padding: 5px; /* Mengatur padding antar kolom */
+}
+
+ion-col {
+    padding: 0px; /* Menghapus padding pada kolom */
+}

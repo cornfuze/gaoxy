@@ -1,9 +1,14 @@
 .header-container {
-  background-color: #2E7D32; /* Warna hijau untuk header */
+  background-color: #176943; /* Warna hijau untuk header */
   padding: 60px 20px;
-  
 }
 
+.mon {
+  width: 100vw;
+  position: absolute;
+  top: -70px;
+  left: 0;
+}
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -14,6 +19,7 @@
 .header-content h2 {
   margin: 0;
   font-size: 1.2em;
+  z-index: 2;
 }
 
 .notification-icon {
