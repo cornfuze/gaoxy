@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true">
+  <div class="container settings d-flex flex-column h-100 p-0 position-relative">
+    <img src="../../../../../assets/images/vector.png" class="position-absolute start-0">
+    <div class="text-white fw-bold position-relative text-center">
+      <ion-button [routerLink]="['/profile']" size="small" shape="round" color="light" class="back position-absolute">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+      <span class="fs-3 fw-bold">Settings</span>
+    </div>
+    <div class="bg-white p-3">
+      <span class="text-black fw-900 fs-5 ms-2">App Information</span>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <ion-button fill="clear" expand="full">
+            <ion-icon slot="start" name="arrow-up-outline" color="success"></ion-icon>
+            <span class="text-capitalize ms-3 me-auto text-black">Current Version</span>
+            <span class="text-lowercase text-black">ver 3.10.2</span>
+          </ion-button>
+        </li>
+        <li class="list-group-item">
+          <ion-button fill="clear" expand="full">
+            <ion-icon slot="start" name="time-outline" color="success"></ion-icon>
+            <span class="text-capitalize ms-3 me-auto text-black">Last Update Time</span>
+            <span class="text-lowercase text-black">02/03/2024</span>
+          </ion-button>
+        </li>
+      </ul>
+      <span class="text-black fw-900 fs-5 ms-2 mt-3">Notication</span>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <ion-button fill="clear" expand="full">
+            <ion-icon slot="start" name="notifications-outline" color="success"></ion-icon>
+            <span class="text-capitalize ms-3 me-auto text-black">notification</span>
+            <ion-toggle color="success"></ion-toggle>
+          </ion-button>
+        </li>
+      </ul>
+      <span class="text-black fw-900 fs-5 ms-2 mt-3">Privacy</span>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <ion-button fill="clear" expand="full">
+            <ion-icon slot="start" name="document-text-outline" color="success"></ion-icon>
+            <span class="text-capitalize ms-3 me-auto text-black">Terms and Conditions</span>
+            <ion-icon slot="end" name="chevron-forward-outline" color="success"></ion-icon>
+          </ion-button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</ion-content>

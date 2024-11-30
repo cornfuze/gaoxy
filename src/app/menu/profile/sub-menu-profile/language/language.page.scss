@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+.container.language {
+    box-sizing: content-box;
+    font-family: "Poppins", sans-serif;
+    background-color: #176943;
+}
+
+ion-button.back {
+    left: 1rem;
+    width: 3rem;
+}
+
+.fw-bold.text-white {
+    padding-top: 2rem;
+    height: 20%;
+}
+
+.bg-white.p-3 {
+    height: 80%;
+}
+
+img.position-absolute {
+    left: 40%;
+}
+
+.mb-4 ion-radio-group ion-radio {
+    --color: #2dd55b;
+    --color-checked: #2dd55b;
+}
+
+// Responsive
+@media only screen and (max-width: 576px) {
+    img.position-absolute {
+        left: 25%;
+    }
+
+    .fw-bold.text-white {
+        height: 15%;
+    }
+
+    .bg-white.p-3 {
+        height: 85%;
+    }
+}

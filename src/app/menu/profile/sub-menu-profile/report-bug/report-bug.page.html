@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true">
+  <div class="container report-bug d-flex flex-column h-100 p-0 position-relative">
+    <img src="../../../../../assets/images/vector.png" class="position-absolute start-0">
+    <div class="text-white fw-bold position-relative text-center">
+      <ion-button [routerLink]="['/profile']" size="small" shape="round" color="light" class="back position-absolute">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+      <span class="fs-3 fw-bold">Report Problem / Bug</span>
+    </div>
+    <div class="bg-white p-3">
+      <div class="mb-4">
+        <span class="text-black fw-bold fs-6 ms-2">
+          Reason for reporting this bug?
+          <ion-icon name="information-circle-outline"></ion-icon>
+        </span>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>functionality issues</option>
+          <option>option one</option>
+          <option>option two</option>
+          <option>option three</option>
+        </select>
+      </div>
+      <div class="mb-4">
+        <span class="text-black fw-bold fs-6 ms-2">
+          Describe the problem? help us understand
+          <ion-icon name="information-circle-outline"></ion-icon>
+        </span>
+        <textarea class="form-control" placeholder="provide a detailed description of the bug"></textarea>
+      </div>
+      <span class="text-black fw-bold fs-6 ms-2 d-block text-black">
+        Attach Files
+        <ion-icon name="information-circle-outline"></ion-icon>
+      </span>
+      <input type="file" id="fileInput" hidden (change)="onFileSelected($event)">
+      <ion-button fill="outline" class="custom-button" color="dark" expand="block"
+        onClick="document.getElementById('fileInput').click()">
+        <ion-icon slot="start" color="success" name="folder-open"></ion-icon>
+        <span class="ms-2 text-lowercase">Choose a File</span>
+      </ion-button>
+      <ion-button id="save" expand="block" class="mx-auto text-capitalize">Submit</ion-button>
+      <ion-alert trigger="save" header="Just Alert!" [buttons]="[{'text':'Cancel'}, {'text':'OK'}]"></ion-alert>
+    </div>
+  </div>
+</ion-content>

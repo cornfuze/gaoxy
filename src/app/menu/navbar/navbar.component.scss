@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+ion-tab-bar {
+    height: 4.8rem;
+    border: 0;
+    background: white;
+}
+
+.navigation {
+    position: fixed;
+    bottom: 0;
+    width: 30em;
+    height: 3.4em;
+    border-radius: 0.6em;
+    background: linear-gradient(to top right, #13ce88, #176943);
+}
+
+.navigation ul {
+    width: inherit;
+    display: flex;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 3.4em;
+    z-index: 1;
+    margin: auto;
+    cursor: pointer;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: inherit;
+    text-align: center;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 2.15em;
+    font-size: 1.8em;
+    text-align: center;
+    transition: .5s;
+    color: white;
+}
+
+.navigation ul li.active a .icon {
+    transform: translateY(-0.9em);
+}
+
+.navigation ul li a .text {
+    position: absolute;
+    color: white;
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(2em);
+}
+
+.navigation ul li.active a .text {
+    opacity: 1;
+    transform: translateY(0.5em);
+}
+
+.indicator {
+    position: absolute;
+    top: -50%;
+    width: 3.4em;
+    height: 3.4em;
+    background: linear-gradient(to top right, #13ce88, #176943);
+    border-radius: 50%;
+    border: 0.35em solid white;
+    transition: .5s;
+    margin-left: 2.1em;
+}
+
+.indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1.25em;
+    width: 1.2em;
+    height: 1.2em;
+    background: transparent;
+    border-top-right-radius: 1.2em;
+    box-shadow: 0 -10px 0 0 white;
+}
+
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -1.25em;
+    width: 1.2em;
+    height: 1.2em;
+    background: transparent;
+    border-top-left-radius: 1.2em;
+    box-shadow: 0 -10px 0 0 white;
+}
+
+.navigation ul li:nth-child(1).active~.indicator {
+    transform: translateX(calc(5.9em * 0));
+}
+
+.navigation ul li:nth-child(2).active~.indicator {
+    transform: translateX(calc(7.43em * 1));
+}
+
+.navigation ul li:nth-child(3).active~.indicator {
+    transform: translateX(calc(7.43em * 2) + 0.12em);
+}
+
+.navigation ul li:nth-child(4).active~.indicator {
+    transform: translateX(calc(7.43em * 3) + 0.18em);
+}
+
+// Responsive
+@media only screen and (max-width: 480px) {
+    .navigation ul {
+        justify-content: space-evenly;
+    }
+
+    .navigation ul li {
+        margin: 0;
+
+    }
+
+    .navigation ul li a .icon {
+        line-height: 2.3em;
+    }
+
+    .navigation ul li.active a .icon {
+        transform: translateY(-0.75em);
+    }
+
+    .indicator {
+        left: 0;
+        margin-left: 3.2em;
+    }
+
+    .navigation ul li:nth-child(1).active~.indicator {
+        transform: translateX(calc(5.9em * 0));
+    }
+
+    .navigation ul li:nth-child(2).active~.indicator {
+        transform: translateX(calc(5.9em * 1) + 0.8em);
+    }
+
+    .navigation ul li:nth-child(3).active~.indicator {
+        transform: translateX(calc(5.9em * 2) + 1.6em);
+    }
+
+    .navigation ul li:nth-child(4).active~.indicator {
+        transform: translateX(calc(5.9em * 3) + 2.35em);
+    }
+}
